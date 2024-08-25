@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="book.png" type="image/x-icon">
+    <link id="themeStylesheet" rel="stylesheet" href="style-light.css">
+    <title>Site Tarefas</title>
+</head>
+<body id="body">
+
+    <header>
+        <div class="Head">            
+            <div class="Titulo"><h1>Site Tarefas</h1></div>
+            <div class="Dark-Mode-Container" id="DarkMode">
+                <div class="Dark-mode">
+                    <div class="Dark-Mode-Button" id="DarkModeButton"></div>
+                </div>
+                <p>Dark mode</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="Titles">
+            <div class="Header">
+                <h1>Suas Tarefas</h1>
+            </div>
+            <div class="Header">
+                <h1>Criar Tarefa</h1>
+            </div>
+        </div>
+        <div class="Tasks-Container">
+            <div class="Task">
+                <div id="Tasks-Container"></div>
+            </div>
+            <div class="Creat-Task">
+                <div class="Container-TaskCreat">
+                    <input type="text" id="title" placeholder="Digite seu Titulo:" required><br>
+                    <input type="text" id="description" placeholder="Digite sua Descrição:" required><br>
+                    <button id="creat">Criar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

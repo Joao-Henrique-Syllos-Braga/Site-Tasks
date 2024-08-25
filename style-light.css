@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'colors.white.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+header {
+    height: 100px;
+    color: var(--white-color);
+    background-color: var(--header-bg-color);
+}
+
+.Head, .Titulo, .Dark-Mode-Container, .Titles {
+    display: flex;
+    align-items: center;
+}
+
+.Head {
+    height: 100%;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.Dark-mode {
+    width: 50px;
+    height: 27px;
+    display: flex;
+    margin-right: 10px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: left;
+    background-color: var(--dark-mode-bg-color);
+    box-shadow: inset 0 0 2px var(--shadow-color-dark);
+}
+
+.Dark-Mode-Button {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    box-shadow: 0 0 2px var(--shadow-color-dark);
+}
+
+.Header {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.Tasks-Container {
+    margin: 20px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-color: var(--tasks-bg-color);
+}
+
+.Task, .Creat-Task {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--task-bg-color);
+}
+
+.Creat-Task {
+    background-color: white;
+}
+
+.Task {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 500px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.Task-Container {
+    padding: 20px;
+    display: flex;
+    margin-top: 20px;
+    text-align: left;
+    border-radius: 10px;
+    align-items: center;
+    background-color: var(--white-color);
+    box-shadow: inset 0 0 10px var(--task-container-shadow-color);
+}
+
+.Task-Title {
+    font-size: 16pt;
+}
+
+
+.Task::-webkit-scrollbar {
+    background-color: var(--task-bg-color);
+}
+
+.Task::-webkit-scrollbar-thumb {
+    border-radius: 20px 0 0 20px;
+    background-color: var(--scrollbar-thumb-color);
+}
+
+.Delete {
+    border: none;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    border-radius: 15px;
+    color: var(--white-color);
+    background-color: var(--button-bg-delete);
+    box-shadow: 0 0 5px var(--button-shadow-delete);
+}
+
+.Container-TaskCreat {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--task-bg-color);
+}
+
+#title, #description {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#creat {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    color: var(--white-color);
+    background-color: var(--button-bg-danger);
+    box-shadow: 0 0 5px var(--button-shadow-danger);
+}
+
+#creat:hover {
+    transition: 0.5s;
+    background-color: var(--button-bg-danger-hover);
+}
+
+@media (max-width: 800px) {
+    .Tasks-Container {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .Header {
+        display: none;
+    }
+
+    .Task, .Creat-Task, .Container-TaskCreat {
+        width: 100%;
+    }
+
+    #title, #description, #creat {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #title {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 900px) {
+    .Container-TaskCreat {
+        width: 400px;
+        height: 400px;
+    }
+
+    #title {
+        margin-top: 50px;
+    }
+
+    #title, #description, #creat {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,46 @@
+:root {
+    /* Cor de fundo do corpo e contêineres */
+    --body-bg-color: rgb(26, 26, 26);
+
+    /* Cor de texto principal */
+    --text-color: white;
+
+    /* Cor de fundo do cabeçalho */
+    --header-bg-color: #252525;
+
+    /* Cor de fundo escuro dos contêineres */
+    --container-bg-color-dark: #333;
+
+    /* Cor de fundo médio dos contêineres */
+    --container-bg-color-medium: #444;
+
+    /* Cor de fundo translúcido para contêineres */
+    --container-bg-color-translucent: rgba(64, 64, 64, 0.8);
+
+    /* Cor de fundo do modo escuro */
+    --dark-mode-bg-color: rgba(0, 0, 0, 0.733);
+
+    /* Cor de sombra geral para modos claros */
+    --shadow-color-light: rgba(255, 255, 255, 0.5);
+
+    /* Cor de fundo do botão de decriar tarefa */
+    --button-bg-danger: #009FFD;
+
+    /* cor de fundo do botãod e deletar tarefa */
+    --button-bg-delete: #EE0000;
+
+    /* Cor de fundo do botão de criar tarefa ao passar o mouse */
+    --button-bg-danger-hover: #2A2A72;
+
+    /* Cor de sombra dos botões */
+    --button-shadow-delete: #EE0000;
+
+    /* Cor da sobra do botão de create */
+    --button-shadow-danger: #009FFD;
+
+    /* Cor de sombra interna do contêiner de tarefas */
+    --task-container-shadow-color: rgba(255, 255, 255, 0.144);
+
+    /* Cor do thumb do scrollbar */
+    --scrollbar-thumb-color: rgba(82, 82, 82, 0.473);
+}
